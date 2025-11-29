@@ -6,5 +6,10 @@ print("== Tambah ( + ) | Kurang ( - ) | Kali ( * ) | Bagi ( / ) == ")
 print("==Format: 1+1 | 1/1 ==") #Format
 
 while True : #Pengulangan
- Hitung = eval(input(" ")) #penghitungan 
- print("= " + str( Hitung)) #hasil
+ try :
+  Hitung = eval(input(" ")) #penghitungan 
+  print("= " + str( Hitung)) #hasil
+ except ZeroDivisionError :
+  print("Error")
+ except Exception :
+  print("Error Format")
